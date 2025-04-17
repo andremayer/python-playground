@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask PoC</title>
+</head>
+<body>
+    <h1>Flask Poczinha</h1>
+    <form method="POST">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name">
+        <button type="submit">Submit</button>
+    </form>
+    {% if greeting %}
+        <p>{{ greeting }}</p>
+    {% endif %}
+</body>
+</html>
